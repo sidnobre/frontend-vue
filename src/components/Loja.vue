@@ -45,7 +45,7 @@
           <tr v-for="loja of lojas" :key="loja.id"> 
             <td>{{ loja.id }}</td>
             <td>{{ loja.nome }}</td>
-            <td>{{ loja.esdereco }}</td>
+            <td>{{ loja.endereco }}</td>
             <td>{{ loja.cidade }}</td>
             <td>{{ loja.estado }}</td>
             <td>

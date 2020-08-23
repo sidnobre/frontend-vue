@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav class="nav-extended  deep-purple darken-4">
+      <div class="nav-content">
+        <ul class="tabs tabs-transparent">
+          <li class="tab"> <router-link to="/loja">Loja</router-link></li>
+          <li class="tab"><router-link to="/produto">Produto</router-link></li>
+        </ul>
+      </div>
+    </nav>
+
+    <router-view class="" name="main"></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  // import Loja from './components/Loja'
+  // import Produto from './components/Produto'
+
+
+   export default {
+     name: 'app',
+  //   components:{
+  //     Loja,
+  //     Produto
+  //   }
+   }
+
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
